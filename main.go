@@ -46,8 +46,8 @@ func main() {
 }
 
 func Usage() {
-	fmt.Println(`Usage: so <help | version | config>
-so <Your question>
+	fmt.Println(`Usage: so <help | version | config | quota>
+       so <Your question>
 
 Examples:
 	so How to list directories?

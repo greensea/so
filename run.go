@@ -198,8 +198,8 @@ func requestChatOpenAI(q string, job SoJobType) ([]byte, error) {
 // Command is located in the last code block (```)
 func extractCodeBlocks(raw []byte) ([]string, error) {
 
+	//   \x60 == `
 	re := regexp.MustCompile(`(?sU)\x60\x60\x60[a-z]*[\r|\n](.+)[\r|\n]\x60\x60\x60`)
-	// 设置 re 为 sUg
 	matches := re.FindAllStringSubmatch(string(raw), -1)
 	if len(matches) < 1 {
 		return nil, fmt.Errorf("Unable to extract command from response")
