@@ -98,8 +98,8 @@ func TestExecCmd3(t *testing.T) {
 		s.Shell = "sh"
 	}
 
-	// input := `find /not_exist -type f -exec ls {} \; | wc -l`
-	input := `find . -type f -mtime +10 -print | wc -l`
+	input := `find /not_exist -type f -exec ls {} \; | wc -l`
+	// input := `find . -type f -mtime +10 -print | wc -l`
 	buf := new(bytes.Buffer)
 	err := ExecCmd(input, buf, nil)
 	if err != nil {
