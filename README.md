@@ -4,7 +4,7 @@ so
 
 English | [中文](README.zh.md)
 
-`How do I use so?`
+`so How to do it in shell?`
 
 Have you ever encountered a situation where you want to accomplish something with a command but can't remember the parameters? So can help you solve this problem.
 
