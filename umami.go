@@ -41,7 +41,7 @@ func Umami(cmd string) error {
 
 	resty.New().R().
 		SetHeader("Content-Type", "application/json").
-		SetHeader("User-Agent", fmt.Sprintf("Mozilla/5.0 (so/%s)", versioninfo.Version)).
+		SetHeader("User-Agent", fmt.Sprintf("Mozilla/5.0 (so/%s)", versioninfo.Revision)).
 		SetBody(bodyBytes).
 		Post(url)
 
