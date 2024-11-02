@@ -182,6 +182,7 @@ func Quota() {
 
 func Version() {
 	fmt.Printf("so %s\n", versioninfo.Version)
+	fmt.Printf("Revision: %s\n", versioninfo.Revision)
 	fmt.Printf("Commit: %s\n", versioninfo.LastCommit)
 }
 
