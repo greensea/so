@@ -23,6 +23,8 @@ func main() {
 		os.Exit(0)
 	}
 
+	go Umami(os.Args[1])
+
 	switch os.Args[1] {
 	case "help":
 		Usage()
